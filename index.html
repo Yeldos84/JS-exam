@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/kp.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="./slick/slick.css">
+   
+
+    
+</head>
+<body>
+    <header>
+        <div class="header__logo">
+            <img src="./img/logo-white.svg" alt="logo">
+            
+        </div>
+        <nav>
+            <li><a href="#">О сервисе</a></li>
+            <li><a href="#">Для бизнеса</a></li>
+            <li><a href="#">Тарифы</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li class="watch"><a href="#">Буду смотреть</a></li>
+            <li class="temp"><a id="temp" href="#"></a></li>
+            <li><img src="./img/icon.svg" alt="Корзина"></li>
+            <li class="enter"><a class="link" href="./pages/login.html">Вход</a></li>
+        </nav>
+    </header>
+    <main>
+        <div class="main__left"><iframe width="560" height="315" src="https://www.youtube.com/embed/x2db3fR1fBs?si=jMIF3gKSoueolc2f&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <div class="main__right">
+            <div class="single-item">
+                <div>
+                  <img src="./img/1.jpeg" alt="">
+                </div>
+                <div>
+                  <img src="./img/3.jpeg" alt="">
+                </div>
+                <div>
+                  <img src="./img/4.jpeg" alt="">
+                </div>
+                <div>
+                  <img src="./img/5.jpeg" alt="">
+                </div>
+                <div>
+                  <img src="./img/6.jpeg" alt="">
+                </div>
+              </div>
+        </div>
+    </main> 
+    <section id="search">
+      <div class="search__div">
+        <select name="select" id="select">
+        <option value="disabled">Выберите год выпуска</option>
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+      </select>
+      <button class="select__btn">Показать</button>
+      </div>
+      <div>
+        <input type="text" placeholder="Введите название фильма">
+        <button class="input__btn">Показать</button>
+      </div>
+        
+    </section>
+    <section>
+        <div class="section__main"></div>
+        <div  class="main__name"></div>
+    </section>
+    
+    
+    <section id="akkardion">
+      <details>
+        <summary>Вопрос 1</summary>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tenetur est nisi. Quo nisi distinctio fuga recusandae libero quibusdam vel atque delectus, minus excepturi temporibus vero tempore quia eos odio?
+        </p>
+      </details>
+      <details>
+        <summary>Вопрос 2</summary>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tenetur est nisi. Quo nisi distinctio fuga recusandae libero quibusdam vel atque delectus, minus excepturi temporibus vero tempore quia eos odio?
+      </details>
+      <details>
+        <summary>Вопрос 3</summary>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tenetur est nisi. Quo nisi distinctio fuga recusandae libero quibusdam vel atque delectus, minus excepturi temporibus vero tempore quia eos odio?
+      </details>
+    </section>
+    <footer>
+      <div class="footer-item">
+        <div>
+          <img src="./img/1.jpeg" alt="">
+        </div>
+        <div>
+          <img src="./img/3.jpeg" alt="">
+        </div>
+        <div>
+          <img src="./img/4.jpeg" alt="">
+        </div>
+        <div>
+          <img src="./img/5.jpeg" alt="">
+        </div>
+        <div>
+          <img src="./img/6.jpeg" alt="">
+        </div>
+        <div>
+          <img src="./img/1.jpeg" alt="">
+        </div>
+        <div>
+          <img src="./img/3.jpeg" alt="">
+        </div>
+        <div>
+          <img src="./img/4.jpeg" alt="">
+        </div>
+        <div>
+          <img src="./img/5.jpeg" alt="">
+        </div>
+        <div>
+          <img src="./img/6.jpeg" alt="">
+        </div>
+      </div>
+    </footer>
+    
+
+    <!-- <script src="app.js"></script> -->
+    <script src="./js/kp.js"></script>
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script>
+      $('.single-item').slick();
+      $('.footer-item').slick({
+        slidesToShow: 9,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        centerMode: true,
+        adaptiveHeight: true
+        
+      });
+    </script>
+    
+</body>
+</html>
