@@ -393,9 +393,9 @@ input__btn.addEventListener('click', ()=>{
         .then(answer => {
             console.log(answer);
             console.log(input.value);
-            console.log(answer.docs[1].names[0].name);
+            console.log(answer.docs[0].name);
             
-            for(let i=0; i<2; i++){
+            for(let i=0; i<2-i; i++){
                 console.log(answer.docs[i].poster.url);
                 let div = document.createElement('div')
                 let img = document.createElement("img");
@@ -421,7 +421,7 @@ input__btn.addEventListener('click', ()=>{
                 
                 watch_count = 0
 
-                if (answer.docs[i].poster.url !== null && answer.docs[0].name === input.value) {
+                if (answer.docs[i].poster.url !== null) {
                     // console.log(img);
                     section__main.innerHTML = ''
                     section__main.append(img)
@@ -434,6 +434,7 @@ input__btn.addEventListener('click', ()=>{
                     name.insertAdjacentElement('afterbegin', rating)
                     name.insertAdjacentElement('afterbegin', year)
                 }
+                
                 
                 
             }
